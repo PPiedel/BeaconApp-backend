@@ -16,7 +16,7 @@ public class Place {
     private Long id;
     @Enumerated(EnumType.STRING)
     private PlaceType placeType;
-    @OneToMany
+    @OneToMany(mappedBy = "place")
     private List<Beacon> beacons;
     private String name;
     private String description;
