@@ -10,6 +10,10 @@ buildscript {
 	}
 }
 
+plugins {
+	id 'net.ltgt.apt' version '0.10'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -31,4 +35,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile 'org.projectlombok:lombok:1.18.2'
+
+	apt 'org.projectlombok:lombok:1.18.2'
 }
