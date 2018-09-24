@@ -18,7 +18,9 @@ import javax.persistence.ManyToOne;
 public class Beacon {
     @Id
     private String macAdress;
+
     @ManyToOne
     private Place place;
+
     private String name;
 }

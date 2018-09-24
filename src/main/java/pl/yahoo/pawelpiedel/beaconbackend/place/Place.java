@@ -17,10 +17,13 @@ import java.util.List;
 public class Place {
     @Id
     private Long id;
+
     @Enumerated(EnumType.STRING)
     private PlaceType placeType;
+
     @OneToMany(mappedBy = "place")
     private List<Beacon> beacons;
+
     private String name;
     private String description;
 

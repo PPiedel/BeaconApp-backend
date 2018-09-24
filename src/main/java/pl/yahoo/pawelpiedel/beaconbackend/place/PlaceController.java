@@ -35,6 +35,7 @@ public class PlaceController {
 
         } else {
             log.info("Beacon not found!");
+
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
 

@@ -6,6 +6,4 @@ import pl.yahoo.pawelpiedel.beaconbackend.beacon.Beacon;
 
 @Repository
 public interface PlaceRepository extends JpaRepository<Place, Long> {
-
-    Place findByBeacons(Beacon beacon);
 }
