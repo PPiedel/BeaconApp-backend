@@ -11,7 +11,13 @@ buildscript {
 }
 
 plugins {
-	id 'net.ltgt.apt' version '0.10'
+	id 'io.franzbecker.gradle-lombok' version '1.14'
+	id 'java'
+}
+
+lombok {
+	version = '1.18.2'
+	sha256 = ""
 }
 
 apply plugin: 'java'
@@ -34,8 +40,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.springframework.boot:spring-boot-devtools')
+	// https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	compile 'org.projectlombok:lombok:1.18.2'
-
-	apt 'org.projectlombok:lombok:1.18.2'
 }

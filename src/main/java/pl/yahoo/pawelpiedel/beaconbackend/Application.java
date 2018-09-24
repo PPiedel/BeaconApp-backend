@@ -2,11 +2,13 @@ package pl.yahoo.pawelpiedel.beaconbackend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class BeaconBackendApplication {
+@ComponentScan
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BeaconBackendApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
