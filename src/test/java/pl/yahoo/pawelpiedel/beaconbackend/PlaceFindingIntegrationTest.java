@@ -45,7 +45,7 @@ public class PlaceFindingIntegrationTest {
     @Test
     public void shouldReturnPlaceForBeaconMacAddressLinkedWithGivenPlace() {
         Place place = bootstrapPlace();
-        Beacon beacon = bootstrapBeacon(place);
+        bootstrapBeacon(place);
 
         String uri = LOCALHOST + port + "/places?" + MAC + "=" + MAC_ADDRESS;
         PlaceDto placeDto = restTemplate.getForObject(uri, PlaceDto.class);
