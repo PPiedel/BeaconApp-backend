@@ -8,12 +8,12 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
-import pl.yahoo.pawelpiedel.beaconbackend.beacon.Beacon;
-import pl.yahoo.pawelpiedel.beaconbackend.beacon.BeaconRepository;
-import pl.yahoo.pawelpiedel.beaconbackend.place.Place;
-import pl.yahoo.pawelpiedel.beaconbackend.place.PlaceDto;
-import pl.yahoo.pawelpiedel.beaconbackend.place.PlaceRepository;
-import pl.yahoo.pawelpiedel.beaconbackend.place.PlaceType;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.beacon.Beacon;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.beacon.BeaconRepository;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.Place;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.dto.PlaceDto;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.PlaceRepository;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.PlaceType;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -57,7 +57,7 @@ public class PlaceFindingIntegrationTest {
 
     private Beacon bootstrapBeacon(Place entity) {
         Beacon beacon = new Beacon()
-                .withMacAdress(MAC_ADDRESS)
+                .withMacAddress(MAC_ADDRESS)
                 .withName(BEACON_NAME)
                 .withPlace(entity);
         return beaconRepository.save(beacon);

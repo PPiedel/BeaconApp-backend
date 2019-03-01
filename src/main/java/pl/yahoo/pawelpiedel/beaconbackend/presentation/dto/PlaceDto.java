@@ -1,4 +1,4 @@
-package pl.yahoo.pawelpiedel.beaconbackend.place;
+package pl.yahoo.pawelpiedel.beaconbackend.presentation.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

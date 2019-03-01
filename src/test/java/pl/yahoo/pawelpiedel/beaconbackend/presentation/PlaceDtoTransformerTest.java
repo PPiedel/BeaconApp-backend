@@ -1,9 +1,13 @@
-package pl.yahoo.pawelpiedel.beaconbackend.place;
+package pl.yahoo.pawelpiedel.beaconbackend.presentation;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.Place;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.dto.PlaceDto;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.PlaceType;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.transformer.PlaceDtoTransformer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;

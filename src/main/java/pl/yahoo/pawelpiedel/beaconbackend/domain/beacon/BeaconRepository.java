@@ -1,4 +1,4 @@
-package pl.yahoo.pawelpiedel.beaconbackend.beacon;
+package pl.yahoo.pawelpiedel.beaconbackend.domain.beacon;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,12 +1,14 @@
-package pl.yahoo.pawelpiedel.beaconbackend.place;
+package pl.yahoo.pawelpiedel.beaconbackend.domain.place;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import pl.yahoo.pawelpiedel.beaconbackend.beacon.Beacon;
-import pl.yahoo.pawelpiedel.beaconbackend.beacon.BeaconRepository;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.beacon.Beacon;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.beacon.BeaconRepository;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.dto.PlaceDto;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.transformer.PlaceDtoTransformer;
 
 import java.util.Optional;
 

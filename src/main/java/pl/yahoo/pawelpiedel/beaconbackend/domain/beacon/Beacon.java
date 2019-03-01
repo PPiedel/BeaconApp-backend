@@ -1,10 +1,10 @@
-package pl.yahoo.pawelpiedel.beaconbackend.beacon;
+package pl.yahoo.pawelpiedel.beaconbackend.domain.beacon;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Wither;
-import pl.yahoo.pawelpiedel.beaconbackend.place.Place;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.place.Place;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,7 +17,7 @@ import javax.persistence.ManyToOne;
 @Wither
 public class Beacon {
     @Id
-    private String macAdress;
+    private String macAddress;
 
     @ManyToOne
     private Place place;

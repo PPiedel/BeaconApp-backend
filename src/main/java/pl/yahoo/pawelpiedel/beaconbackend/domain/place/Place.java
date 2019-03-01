@@ -1,10 +1,10 @@
-package pl.yahoo.pawelpiedel.beaconbackend.place;
+package pl.yahoo.pawelpiedel.beaconbackend.domain.place;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Wither;
-import pl.yahoo.pawelpiedel.beaconbackend.beacon.Beacon;
+import pl.yahoo.pawelpiedel.beaconbackend.domain.beacon.Beacon;
 
 import javax.persistence.*;
 import java.util.List;
