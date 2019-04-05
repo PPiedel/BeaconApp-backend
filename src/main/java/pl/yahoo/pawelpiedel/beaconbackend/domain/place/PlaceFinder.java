@@ -29,7 +29,7 @@ public class PlaceFinder {
 
             return new ResponseEntity<>(transformer.transform(beacon.getPlace()), HttpStatus.OK);
         } else {
-            log.info("Beacon not found!");
+                   log.info("Beacon not found!");
 
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }

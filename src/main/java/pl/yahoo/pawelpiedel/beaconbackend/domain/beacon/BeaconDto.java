@@ -4,23 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Wither;
-import pl.yahoo.pawelpiedel.beaconbackend.domain.place.Place;
+import pl.yahoo.pawelpiedel.beaconbackend.presentation.dto.PlaceDto;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
-@Entity
-@AllArgsConstructor
+
 @NoArgsConstructor
-@Data
+@AllArgsConstructor
 @Wither
-public class Beacon {
-    @Id
+@Data
+public class BeaconDto {
+    private PlaceDto place;
     private String macAddress;
-    @ManyToOne
-    private Place place;
     private String name;
     private Double calibratedStrength;
     private Double environmentalConstant;
